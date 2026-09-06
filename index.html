@@ -2,126 +2,147 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full Stack Developer">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Kirolos Habib — 3D interactive developer portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Add the folder name in "href" -->
     <link rel="icon" href="icons/tap_icon.png">
-    <title>Kirolos Habib</title>
+    <title>Kirolos Habib — 3D Portfolio</title>
 </head>
 <body>
-    <section class="home" id="home">
-        <nav>
-            <h2>K.<span>Code</span></h2>
-            <ul id="actions">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#AM">About Me</a></li>
-                <li><a href="#SER">Services</a></li>
-                <li><a href="#SK">Skills</a></li>
-                <li><a href="#home">Contact Me</a></li>
-            </ul>
-            <a href="#" class="button" hidden>Subscribe</a>
-            
-            <button id="menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-        <div class="content">
-            <div class="container-texts">
-                <h4>Hello, My Name Is</h4>
-                <h1>Kirolos <span>Habib</span></h1>
-                <h3>I'm a <span>Full-Stack</span> Developer</h3>
-                <a href="#" class="button">Download C.V</a>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <nav class="nav">
+        <a class="logo" href="#home">K.<span>Code</span></a>
+        <ul id="actions">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+        <a class="nav-cta" href="#contact">Let's talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <button id="menu" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-grid"></div>
+            <div class="hero-copy reveal">
+                <div class="eyebrow"><span class="status-dot"></span> Available for selected projects</div>
+                <p class="kicker">DIGITAL CRAFT / 2026</p>
+                <h1>Building digital<br><span>worlds</span> that move.</h1>
+                <p class="hero-text">I'm Kirolos Habib, a developer focused on fast, polished websites with thoughtful interaction, clean code and a strong visual point of view.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#services">Explore my work <i class="fa-solid fa-arrow-down"></i></a>
+                    <a class="button ghost" href="#contact">Start a project</a>
+                </div>
                 <div class="social-media">
-                    <a href="#" target="_blank"><img src="icons/facebook_logo.png" alt=""></a>
-                    <a href="#" target="_blank"><img src="icons/twitter_logo.png" alt=""></a>
-                    <a href="#" target="_blank"><img src="icons/github_logo.png" alt=""></a>
+                    <a href="#" aria-label="Facebook"><img src="icons/facebook_logo.png" alt=""></a>
+                    <a href="#" aria-label="Twitter"><img src="icons/twitter_logo.png" alt=""></a>
+                    <a href="#" aria-label="GitHub"><img src="icons/github_logo.png" alt=""></a>
                 </div>
             </div>
-            <div class="container-images">
-                <img src="images/shape1.png" alt="" class="shape">
-                <img src="images/me.png" alt="" class="pic">
-        </div>
-    </section>
-    <section class="about" id="AM">
-        <div class="container-images">
-            <img src="images/about_me.png" alt="">
-        </div>
-        <div class="container-texts">
-            <h1>About <span>Me</span></h1>
-            <h5> <span>Full-Stack</span>Developer</h5>
-            <p>My Name is Kirolos Habib, I Started In Web Development, About Two Years Ago, 
-                I Always Strive To Learn Everything New In This Field And Achieve The Best Possible Achievement In The Best Way.
-            </p>
-        </div>
-    </section>
-    <section class="services" id="SER">
-        <h1 class="text-center"> <span>Our</span>Services</h1>
-        <div class="box">
-            <div class="card">
-                <i class="fa-solid fa-code-branch"></i>
-                <h5>Build Websites</h5>
-                <div class="par">
-                    <p>
-                        I Build Websites From Scratch To The End, Until The Launch Of The Website To Be Successfully Available To Everyone
-                    </p>
+
+            <div class="scene" id="scene" aria-hidden="true">
+                <div class="orb orb-a"></div>
+                <div class="orb orb-b"></div>
+                <div class="ring ring-one"></div>
+                <div class="ring ring-two"></div>
+                <div class="cube-wrap">
+                    <div class="cube">
+                        <div class="face front">K.</div>
+                        <div class="face back">CODE</div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
+                </div>
+                <div class="floating-card card-one"><span>01</span><strong>Design</strong><small>Interaction</small></div>
+                <div class="floating-card card-two"><span>02</span><strong>Build</strong><small>Performance</small></div>
+                <div class="floating-card card-three"><span>03</span><strong>Ship</strong><small>Experience</small></div>
+            </div>
+            <div class="scroll-hint"><span></span> Scroll to explore</div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="section-label">01 / ABOUT</div>
+            <div class="about-layout">
+                <div class="about-visual tilt reveal">
+                    <div class="portrait-frame">
+                        <img src="images/me.png" alt="Kirolos Habib">
+                    </div>
+                    <div class="visual-caption">DEVELOPER<br><span>CREATIVE TECHNOLOGY</span></div>
+                </div>
+                <div class="section-copy reveal">
+                    <p class="kicker">THE PERSON BEHIND THE SCREEN</p>
+                    <h2>Code with a<br><span>point of view.</span></h2>
+                    <p>My name is Kirolos Habib. I build websites from concept to launch, balancing visual design, responsive engineering and maintainable code.</p>
+                    <p>I care about the details users feel: motion that has purpose, interfaces that stay fast, and experiences that work beautifully across devices.</p>
+                    <a class="text-link" href="#contact">Work with me <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="card">
-                <i class="fa-solid fa-code"></i>
-                <h5>Clean Codes</h5>
-                <div class="par">
-                    <p>I Build The Website Using Clean Code From Scratch Without Errors</p>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="section-label">02 / SERVICES</div>
+            <div class="section-heading reveal">
+                <p class="kicker">FROM IDEA TO INTERFACE</p>
+                <h2>What I <span>build.</span></h2>
+            </div>
+            <div class="service-grid">
+                <article class="service-card tilt reveal"><span class="number">01</span><i class="fa-solid fa-layer-group"></i><h3>Websites</h3><p>Modern responsive websites designed around your brand, content and goals.</p><div class="line"></div></article>
+                <article class="service-card tilt reveal"><span class="number">02</span><i class="fa-solid fa-code"></i><h3>Clean Code</h3><p>Structured front-end code that is readable, maintainable and built to scale.</p><div class="line"></div></article>
+                <article class="service-card tilt reveal"><span class="number">03</span><i class="fa-solid fa-mobile-screen-button"></i><h3>Responsive UX</h3><p>Carefully adapted experiences for phones, tablets, laptops and large screens.</p><div class="line"></div></article>
+                <article class="service-card tilt reveal"><span class="number">04</span><i class="fa-solid fa-gauge-high"></i><h3>Optimization</h3><p>Performance-minded implementation with attention to speed, accessibility and stability.</p><div class="line"></div></article>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="section-label">03 / STACK</div>
+            <div class="skills-layout">
+                <div class="section-copy reveal">
+                    <p class="kicker">TOOLS OF THE TRADE</p>
+                    <h2>Simple stack.<br><span>Serious results.</span></h2>
+                    <p>I use the fundamentals well: semantic HTML, modern CSS and JavaScript, combined with the tools needed to turn a design into a dependable product.</p>
+                </div>
+                <div class="skill-cloud reveal">
+                    <div class="skill-pill featured">HTML5</div>
+                    <div class="skill-pill">CSS3</div>
+                    <div class="skill-pill featured">JavaScript</div>
+                    <div class="skill-pill">WordPress</div>
+                    <div class="skill-pill">Elementor</div>
+                    <div class="skill-pill">Git</div>
+                    <div class="skill-pill">Responsive UI</div>
+                    <div class="skill-pill">Performance</div>
                 </div>
             </div>
-            <div class="card">
-                <i class="fa-solid fa-code-compare"></i>
-                <h5>Compatibility</h5>
-                <div class="par">
-                    <p>It Is Always Taken Into Account That The Site Is Compatible With All Devices Of All Sizes</p>
-                </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="contact-panel tilt reveal">
+                <div class="section-label">04 / CONTACT</div>
+                <p class="kicker">HAVE AN IDEA?</p>
+                <h2>Let's make it<br><span>real.</span></h2>
+                <p>Tell me what you're building and what success looks like. We'll turn the rough idea into a clear digital experience.</p>
+                <a class="button primary" href="mailto:hello@example.com">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="contact-orbit orbit-a"></div><div class="contact-orbit orbit-b"></div>
             </div>
-            <div class="card">
-                <i class="fas fa-chart-line"></i>
-                <h5>Code Correction</h5>
-                <div class="par">
-                    <p>
-                        There Is More Than One Review Process For The Site To Ensure That It Is Free From Errors And Provides An Ideal
-                        Experience
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="skills" id="SK">
-        <div class="container-skills">
-            <h1> <span>My</span>Skills</h1>
-            <div class="content-skills">
-                <div class="skill"><img src="icons/html_icon_skills.png" alt="html"></div>
-                <div class="skill"><img src="icons/css_icon_skills.png" alt="css"></div>
-                <div class="skill"><img src="icons/javascript_icon_skills.png" alt="javascript"></div>
-            </div>
-        </div>
-        <div class="container-images">
-            <img src="images/skills.png" alt="">
-        </div>
-    </section>
-    <footer class="footer-content">
-        <a href="#"><h2> k. <span>Code</span></h2></a>
-        <p>Developed By Kirolos Habib</p>
-        <p class="end">
-            <a href="">copyright&copy; K.Code 2022</a>
-        </p>
+        </section>
+    </main>
+
+    <footer>
+        <a class="logo" href="#home">K.<span>Code</span></a>
+        <p>Designed & developed by Kirolos Habib</p>
+        <span>© 2026 K.Code</span>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
